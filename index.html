@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Request App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <h1>App resquest Places - Booking.com</h1>
+                <div class="form">
+                    <div class="form-group">
+                        <label for="request-query">Query request:</label><br/>
+                        <input name="request-query-input" id="request-query" class="form-control" type="text"/>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-outline-light" onclick="sendRequest()">Send request</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="request-result-container row"></div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
